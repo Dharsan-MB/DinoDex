@@ -1,0 +1,91 @@
+/* Headings */
+.heading-xl {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heading-lg {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+.heading-md {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Body/Subtext */
+.body-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.subtext-sm {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #6B7280; /* light gray for subtle content */
+}
+
+:root {
+  /* Transition Utility */
+  --c-transition-speed: 0.3s;
+}
+
+/* Light Theme */
+.light-theme {
+  --c-primary:   #1E40AF;
+  --c-secondary: #F59E0B;
+  --c-accent:    #10B981;
+
+  --c-bg:        #F9FAFB;
+  --c-text:      #1F2937;
+  --c-card:      #FFFFFF;
+  --c-border:    #E5E7EB;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --c-primary:   #60A5FA;
+  --c-secondary: #FBBF24;
+  --c-accent:    #34D399;
+
+  --c-bg:        #111827;
+  --c-text:      #E5E7EB;
+  --c-card:      #1F2937;
+  --c-border:    #374151;
+}
+
+
+
+
+body{
+    margin: 12rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
