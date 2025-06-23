@@ -31,6 +31,11 @@
   color: #6B7280; /* light gray for subtle content */
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 8rem;
+}
+
 .c-button{
   padding: 1rem;
   font-weight: 500;
@@ -90,6 +95,7 @@ nav{
     background-color: var(--c-primary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     padding: 0 12rem ;
+    /* position: stic; */
 }
 
 .nav-left{
@@ -106,6 +112,34 @@ nav{
     gap: 1.5rem;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+.back-top{
+  position: fixed;
+  z-index: 1000;
+  right: 80px;
+  bottom: 30px;
+  background-color: var(--c-bg);
+  color: var(--c-accent);;
+}
 
 .hero{
   display: flex;
@@ -154,6 +188,7 @@ nav{
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
+  margin-bottom: 4rem;
 }
 
 .card{
@@ -162,6 +197,7 @@ nav{
   padding: 1rem;
   color: var(--c-primary);
   position: relative;
+  border-radius: 1rem;
 }
 
 .card h2{
