@@ -74,7 +74,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: var(--c-primary);
-  color: var(--c-secondary);
+  color: var(--c-accent);
 }
 
 
@@ -136,4 +136,43 @@ nav{
 
 .about-left img{
   max-width: 600px;
+}
+
+.about-right{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.service h1{
+  margin: 10rem 0 7rem 0;
+
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.card{
+  width: 300px;
+  background-color: var(--c-accent);
+  padding: 1rem;
+  color: var(--c-primary);
+  position: relative;
+}
+
+.card h2{
+  padding: 1rem 0 0 0;
+}
+
+.card img{
+  position: absolute;
+  width: 50px;
+  top: -35px;
+  background-color: var(--c-secondary);
+  border-radius: 50%;
+  padding: 10px;
 }
