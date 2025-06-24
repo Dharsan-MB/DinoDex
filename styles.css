@@ -200,6 +200,17 @@ nav{
   border-radius: 1rem;
 }
 
+.card-f{
+  width: 500px;
+  background-color: var(--c-accent);
+  padding: .45rem;
+  color: var(--c-primary);
+  position: relative;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+
 .card h2{
   padding: 1rem 0 0 0;
 }
@@ -211,4 +222,64 @@ nav{
   background-color: var(--c-secondary);
   border-radius: 50%;
   padding: 10px;
+}
+
+.scroll-card-container{
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scroll-behavior:smooth;
+  margin:2rem;
+}
+
+.scroll-card{
+  flex: 0 0 250px;
+  background: var(--c-card);
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scroll-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Scrollbar styles for WebKit browsers */
+.scroll-card-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-card-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-card-container::-webkit-scrollbar-thumb {
+  background-color: var(--c-primary);  /* Customize this to fit your theme */
+  border-radius: 10px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+}
+
+.scroll-card-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--c-accent);
+}
+
+/* Scrollbar styles for Firefox */
+.scroll-card-container {
+  scrollbar-width:1rem;
+  scrollbar-color: var(--c-secondary) transparent;
 }
